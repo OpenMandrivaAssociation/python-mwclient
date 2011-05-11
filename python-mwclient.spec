@@ -23,7 +23,7 @@ and allows access to almost all implemented API functions
 # -------------------------------------------------------------------
 
 %prep
-%setup -q -n mwclient
+%setup -q -n mwclient-%{version}
 
 %build
 :
