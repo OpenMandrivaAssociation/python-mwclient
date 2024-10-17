@@ -4,7 +4,7 @@ Version:	0.10.1
 Release:	2
 Group:		Development/Python
 License:	MIT
-Url:		http://sourceforge.net/apps/mediawiki/mwclient/index.php?title=Main_Page
+Url:		https://sourceforge.net/apps/mediawiki/mwclient/index.php?title=Main_Page
 Source0:	https://files.pythonhosted.org/packages/97/b4/5fc70ad3286a8d8ec4b9ac01acad0f6b00c5a48d4a16b9d3be6519b7eb21/mwclient-0.10.1.tar.gz
 BuildArch:	noarch
 BuildRequires:	pkgconfig(python)
