@@ -1,7 +1,7 @@
 Summary:	Mwclient is a client to the MediaWiki API
 Name:		python-mwclient
 Version:	0.10.1
-Release:	3
+Release:	4
 Group:		Development/Python
 License:	MIT
 Url:		https://sourceforge.net/apps/mediawiki/mwclient/index.php?title=Main_Page
