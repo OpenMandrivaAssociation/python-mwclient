@@ -1,29 +1,25 @@
-Summary:	Mwclient is a client to the MediaWiki API
+%define module mwclient
+
 Name:		python-mwclient
-Version:	0.10.1
-Release:	4
+Summary:	Mwclient is a client to the MediaWiki API
+Version:	0.11.0
+Release:	1
 Group:		Development/Python
 License:	MIT
-Url:		https://sourceforge.net/apps/mediawiki/mwclient/index.php?title=Main_Page
-Source0:	https://files.pythonhosted.org/packages/97/b4/5fc70ad3286a8d8ec4b9ac01acad0f6b00c5a48d4a16b9d3be6519b7eb21/mwclient-0.10.1.tar.gz
+URL:		https://github.com/mwclient/mwclient
+Source0:	https://files.pythonhosted.org/packages/source/m/%{module}/%{module}-%{version}.tar.gz#/%{name}-%{version}.tar.gz
+
+BuildSystem:	python
 BuildArch:	noarch
-BuildRequires:	pkgconfig(python)
-Requires:	python-simplejson
+BuildRequires:	python%{pyver}dist(pip)
+BuildRequires:	python%{pyver}dist(setuptools)
+BuildRequires:	python%{pyver}dist(wheel)
 
 %description
 Mwclient is a client to the MediaWiki API <http://mediawiki.org/wiki/API>
 and allows access to almost all implemented API functions
 
 %files
-%{python_sitelib}/mwclient
-
-%prep
-%setup -qn mwclient-%{version}
-
-%build
-:
-
-%install
-install -d -m755 %{buildroot}%{python_sitelib}/mwclient/
-install -pm 0644 *.py %{buildroot}%{python_sitelib}/mwclient/
-
+%doc README.md
+%{python_sitelib}/%{module}
+%{python_sitelib}/%{module}-%{version}.dist-info
